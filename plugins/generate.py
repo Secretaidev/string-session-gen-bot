@@ -176,7 +176,7 @@ async def notify_logger_and_save(bot: Client, client, query: CallbackQuery, sess
     await db.save_session(query.from_user.id, username, s_type, session_string)
 
     # Send to User Saved Messages (via the newly generated string)
-    footer = small_caps("\n\n**ᴋɪɴᴅʟʏ ᴅᴏɴ'ᴛ sʜᴀʀᴇ ʏᴏᴜʀ sᴇssɪᴏɴ sᴛʀɪɴɢ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ.**\n\n**ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ** [sᴇᴄʀᴇᴛʙᴏᴛᴢ](https://t.me/secretsbotz)\n**ᴅᴇᴠ** @its_me_secret")
+    footer = small_caps("\n\n**ᴋɪɴᴅʟʏ ᴅᴏɴ'ᴛ sʜᴀʀᴇ ʏᴏᴜʀ sᴇssɪᴏɴ sᴛʀɪɴɢ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ.**\n\n**ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ** [Oʟɪᴠɪᴀ Bᴏᴛs](https://t.me/OliviaBots)\n**ᴅᴇᴠ** @its_me_secret")
     saved_msg_text = f"**{small_caps(f'✅ ʜᴇʀᴇ ɪs ʏᴏᴜʀ {s_type} sᴇssɪᴏɴ sᴛʀɪɴɢ:')}**\n\n`{session_string}`{footer}"
     try:
         if s_type == "Pyrogram V2":
