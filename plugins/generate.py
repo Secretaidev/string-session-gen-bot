@@ -41,7 +41,7 @@ async def choose_session_type(bot: Client, query: CallbackQuery):
         [InlineKeyboardButton(small_caps("🔙 Cᴀɴᴄᴇʟ Tʀᴀɴsᴀᴄᴛɪᴏɴ"), callback_data="menu_home")]
     ]
     await query.message.edit_text(
-        small_caps("🛠 **Mᴀɪɴ Gᴇɴᴇʀᴀᴛᴏʀ Eɴɢɪɴᴇs**\n\nᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴘʀᴇғᴇʀʀᴇᴅ Fʀᴀᴍᴇᴡᴏʀᴋ.\n\n*(Aʟʟ ᴍᴀɪɴ ᴇɴɢɪɴᴇs sᴜᴘᴘᴏʀᴛ ZERO-LOAD sᴇᴄᴜʀᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ)*"),
+        small_caps("🛠 **Mᴀɪɴ Gᴇɴᴇʀᴀᴛᴏʀ Eɴɢɪɴᴇs**\n\nᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴘʀᴇғᴇʀʀᴇᴅ Fʀᴀᴍᴇᴡᴏʀᴋ.\n\n*(Aʟʟ ᴍᴀɪɴ ᴇɴɢɪɴᴇs sᴜᴘᴘᴏʀᴛ sᴇᴄᴜʀᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ)*"),
         reply_markup=InlineKeyboardMarkup(buttons)
     )
 
